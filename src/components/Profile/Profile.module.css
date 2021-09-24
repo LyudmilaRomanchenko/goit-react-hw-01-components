@@ -1,0 +1,11 @@
+.profile {
+  color: rgb(51, 53, 53);
+}
+
+.avatar {
+  height: 300px;
+}
+
+.stats {
+  display: flex;
+}
