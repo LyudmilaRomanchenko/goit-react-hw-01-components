@@ -1,6 +1,13 @@
-//  import React from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root'),
+);
 
 // const a = React.createElement('a', {
 //   href: 'github.com/LyudmilaRomanchenko/goit-react-hw-01-components',
@@ -12,18 +19,6 @@ import App from './App';
 // }
 
 //
-
-
-
-
-
-ReactDOM.render( <App />,
-  
-  document.getElementById('root')
-);
-
-
-
 
 // import React from 'react';
 // import ReactDOM from 'react-dom';
