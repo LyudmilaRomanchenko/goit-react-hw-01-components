@@ -1,11 +1,69 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .profile {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: rgb(204, 204, 204);
   color: rgb(51, 53, 53);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 400px;
+  background-color: #fff;
+  padding: 30px;
+  /* outline: solid 1px red; */
+}
+
+.description {
+  margin: 0 auto;
+  text-align: center;
+  width: 200px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  /* outline: solid 1px rgb(36, 163, 74); */
 }
 
 .avatar {
-  height: 300px;
+  height: 150px;
+}
+
+.name {
+  color: rgb(63, 58, 58);
+  text-transform: uppercase;
+}
+
+.tag {
+  color: rgb(126, 121, 121);
+}
+
+.location {
+  color: rgb(126, 121, 121);
 }
 
 .stats {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  margin: 0 auto;
+  border: solid 1px rgb(126, 121, 121);
+  /* outline: solid 1px rgb(64, 36, 163); */
+}
+
+.statsItem {
+  margin: 10px;
+  width: 70px;
+  /* border-right: solid 1px rgb(126, 121, 121); */
+}
+
+.label {
+  display: block;
+  font-weight: 500;
 }
