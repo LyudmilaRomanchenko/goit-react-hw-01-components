@@ -11,8 +11,8 @@ function FriendList({ friends }) {
           {friends.map(friend => (
             <li className={s.item} key={friend.id}>
               <span className={friend.isOnline ? s.online : s.offline}></span>
-              <img className="avatar" src={friend.avatar} alt="" width="48" />
-              <p className="name">{friend.name}</p>
+              <img className={s.avatar} src={friend.avatar} alt="" width="48" />
+              <p className={s.name}>{friend.name}</p>
             </li>
           ))}
         </ul>
