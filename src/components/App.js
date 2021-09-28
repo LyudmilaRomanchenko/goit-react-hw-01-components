@@ -24,14 +24,15 @@
 
 // export default App;
 
-import Profile from './components/Profile';
-import user from './components/Profile/user.json';
-import Statistics from './components/Statistics';
-import statisticalData from './components/Statistics/statistical-data.json';
-import FriendList from './components/FriendList';
-import friends from './components/FriendList/friends.json';
-import TransactionHistory from './components/TransactionHistory';
-import transactions from './components/TransactionHistory/transactions.json';
+import Profile from './Profile';
+import user from './Profile/user.json';
+import Statistics from './Statistics';
+import statisticalData from './Statistics/statistical-data.json';
+// import FriendList from './FriendList';
+// import friends from './FriendList/friends.json';
+import FriendListContainer from './FriendList/FriendLisContainert';
+import TransactionHistory from './TransactionHistory';
+import transactions from './TransactionHistory/transactions.json';
 
 function App() {
   return (
@@ -41,13 +42,15 @@ function App() {
         name={user.name}
         tag={user.tag}
         location={user.location}
-        followers={user.stats.followers}
-        views={user.stats.views}
-        likes={user.stats.likes}
+        stats={user.stats}
+        // followers: {user.stats.followers},
+        // views: {user.stats.views},
+        // likes: {user.stats.likes}
       />
       <Statistics title="Upload stats" stats={statisticalData} />
       {/* <Statistics stats={statisticalData} /> */}
-      <FriendList friends={friends} />
+      {/* <FriendList friends={friends} /> */}
+      <FriendListContainer />
       <TransactionHistory items={transactions} />
     </div>
   );
