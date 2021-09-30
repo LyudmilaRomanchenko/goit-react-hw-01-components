@@ -4,7 +4,7 @@ console.log(s);
 
 function Profile({ name, tag, location, avatar, stats }) {
   // console.log(props);
-  // const { name, tag, location, avatar, followers, views, likes } = props;
+  const { followers, views, likes } = stats;
   return (
     <div className={s.profile}>
       <div className={s.container}>
@@ -18,15 +18,15 @@ function Profile({ name, tag, location, avatar, stats }) {
         <ul className={s.stats}>
           <li className={s.statsItem}>
             <span className={s.label}>Followers</span>
-            <span className={s.quantity}>{stats.followers}</span>
+            <span className={s.quantity}>{followers}</span>
           </li>
           <li className={s.statsItem}>
             <span className={s.label}>Views</span>
-            <span className={s.quantity}>{stats.views}</span>
+            <span className={s.quantity}>{views}</span>
           </li>
           <li className={s.statsItem}>
             <span className={s.label}>Likes</span>
-            <span className={s.quantity}>{stats.likes}</span>
+            <span className={s.quantity}>{likes}</span>
           </li>
         </ul>
       </div>
